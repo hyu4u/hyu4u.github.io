@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr" data-navigation-type="default" data-navbar-horizontal-shape="default">
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Profile - WINGS Sales</title>
+
+    <!-- ===============================================-->
+    <!--    Favicons-->
+    <!-- ===============================================-->
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/img/logo/wings_icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/logo/wings_icon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/img/logo/wings_icon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/img/logo/wings_icon.png">
+    <link rel="manifest" href="../assets/manifest.json">
+    <meta name="msapplication-TileImage" content="../assets/img/logo/wings_icon.png">
+    <meta name="theme-color" content="#ffffff">
+    <script src="../vendors/simplebar/simplebar.min.js"></script>
+    <script src="../assets/js/config.js"></script>
+
+    <!-- ===============================================-->
+    <!--    Stylesheets-->
+    <!-- ===============================================-->
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800;900&amp;display=swap" rel="stylesheet">
+    <link href="../vendors/simplebar/simplebar.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link href="../assets/css/theme-rtl.min.css" type="text/css" rel="stylesheet" id="style-rtl">
+    <link href="../assets/css/theme.min.css" type="text/css" rel="stylesheet" id="style-default">
+    <link href="../assets/css/user-rtl.min.css" type="text/css" rel="stylesheet" id="user-style-rtl">
+    <link href="../assets/css/user.min.css" type="text/css" rel="stylesheet" id="user-style-default">
+    <script>
+      var phoenixIsRTL = window.config.config.phoenixIsRTL;
+      if (phoenixIsRTL) {
+        var linkDefault = document.getElementById('style-default');
+        var userLinkDefault = document.getElementById('user-style-default');
+        linkDefault.setAttribute('disabled', true);
+        userLinkDefault.setAttribute('disabled', true);
+        document.querySelector('html').setAttribute('dir', 'rtl');
+      } else {
+        var linkRTL = document.getElementById('style-rtl');
+        var userLinkRTL = document.getElementById('user-style-rtl');
+        linkRTL.setAttribute('disabled', true);
+        userLinkRTL.setAttribute('disabled', true);
+      }
+    </script>
+  </head>
+
+  <body>
+    <!-- ===============================================-->
+    <!--    Main Content-->
+    <!-- ===============================================-->
+    <main class="main" id="top">
+      <nav class="navbar navbar-vertical navbar-expand-lg" style="display:none;">
+        <div class="collapse navbar-collapse" id="navbarVerticalCollapse">
+          <!-- scrollbar removed-->
+          <div class="navbar-vertical-content">
+            <ul class="navbar-nav flex-column" id="navbarVerticalNav">
+              <li class="nav-item">
+                <div class="nav-item-wrapper"><a class="nav-link active label-1" href="profil.html" role="button" data-bs-toggle="" aria-expanded="false">
+                  <div class="d-flex align-items-center"><span class="nav-link-icon"><span data-feather="user"></span></span><span class="nav-link-text-wrapper"><span class="nav-link-text">Profile</span></span></div>
+                </a></div><!-- parent pages-->
+                
+                <div class="nav-item-wrapper"><a class="nav-link label-1" href="ubah_password.html" role="button" data-bs-toggle="" aria-expanded="false">
+                  <div class="d-flex align-items-center"><span class="nav-link-icon"><span data-feather="key"></span></span><span class="nav-link-text-wrapper"><span class="nav-link-text">Ubah Password</span></span></div>
+                </a></div><!-- parent pages-->
+                
+                <div class="nav-item-wrapper"><a class="nav-link label-1" href="#download_log" role="button" data-bs-toggle="" aria-expanded="false">
+                  <div class="d-flex align-items-center"><span class="nav-link-icon"><span data-feather="book"></span></span><span class="nav-link-text-wrapper"><span class="nav-link-text">Download Log</span></span></div>
+                </a></div><!-- parent pages-->
+                
+                <div class="nav-item-wrapper"><a class="nav-link label-1" href="../index.html" role="button" data-bs-toggle="" aria-expanded="false">
+                  <div class="d-flex align-items-center"><span class="nav-link-icon"><span data-feather="log-out"></span></span><span class="nav-link-text-wrapper"><span class="nav-link-text">Logout</span></span></div>
+                </a></div><!-- parent pages-->
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="navbar-vertical-footer">
+          <button class="btn navbar-vertical-toggle border-0 fw-semibold w-100 white-space-nowrap d-flex align-items-center"><span class="uil uil-left-arrow-to-left fs-8"></span><span class="uil uil-arrow-from-right fs-8"></span><span class="navbar-vertical-footer-text ms-2">Collapsed View</span></button>
+        </div>
+      </nav>
+      <nav class="navbar navbar-top fixed-top navbar-expand" id="navbarDefault" style="display:none;">
+        <div class="collapse navbar-collapse justify-content-between">
+          <div class="navbar-logo">
+            <a href="persiapan3.html" class="btn navbar-toggler navbar-toggler-humburger-icon hover-bg-transparent" ><span class="fas fa-arrow-left"></span></a>
+            <a class="navbar-brand" href="#home.html">
+              <div class="d-flex align-items-center">
+                <span class="fw-semibold fs-8 ms-2">Profil</span>
+              </div>
+            </a>
+          </div>
+          <ul class="navbar-nav navbar-nav-icons flex-row">
+            <li class="nav-item">
+              <a href="../index.html" class="btn navbar-toggler navbar-toggler-humburger-icon hover-bg-transparent" ><span data-feather="log-out">    </span></a>
+            </li>
+            <li class="nav-item">
+              <button class="btn navbar-toggler navbar-toggler-humburger-icon hover-bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#navbarVerticalCollapse" aria-controls="navbarTopCollapse" aria-expanded="false" aria-label="Toggle Navigation"><span class="navbar-toggle-icon"><span class="toggle-line"></span></span></button>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <script>
+        var navbarTopShape = window.config.config.phoenixNavbarTopShape;
+        var navbarPosition = window.config.config.phoenixNavbarPosition;
+        var body = document.querySelector('body');
+        var navbarDefault = document.querySelector('#navbarDefault');
+        var navbarTop = document.querySelector('#navbarTop');
+        var topNavSlim = document.querySelector('#topNavSlim');
+        var navbarTopSlim = document.querySelector('#navbarTopSlim');
+        var navbarCombo = document.querySelector('#navbarCombo');
+        var navbarComboSlim = document.querySelector('#navbarComboSlim');
+        var dualNav = document.querySelector('#dualNav');
+
+        var documentElement = document.documentElement;
+        var navbarVertical = document.querySelector('.navbar-vertical');
+
+        if (navbarPosition === 'dual-nav') {
+          topNavSlim?.remove();
+          navbarTop?.remove();
+          navbarTopSlim?.remove();
+          navbarCombo?.remove();
+          navbarComboSlim?.remove();
+          navbarDefault?.remove();
+          navbarVertical?.remove();
+          dualNav.removeAttribute('style');
+          document.documentElement.setAttribute('data-navigation-type', 'dual');
+
+        } else if (navbarTopShape === 'slim' && navbarPosition === 'vertical') {
+          navbarDefault?.remove();
+          navbarTop?.remove();
+          navbarTopSlim?.remove();
+          navbarCombo?.remove();
+          navbarComboSlim?.remove();
+          topNavSlim.style.display = 'block';
+          navbarVertical.style.display = 'inline-block';
+          document.documentElement.setAttribute('data-navbar-horizontal-shape', 'slim');
+
+        } else if (navbarTopShape === 'slim' && navbarPosition === 'horizontal') {
+          navbarDefault?.remove();
+          navbarVertical?.remove();
+          navbarTop?.remove();
+          topNavSlim?.remove();
+          navbarCombo?.remove();
+          navbarComboSlim?.remove();
+          dualNav?.remove();
+          navbarTopSlim.removeAttribute('style');
+          document.documentElement.setAttribute('data-navbar-horizontal-shape', 'slim');
+        } else if (navbarTopShape === 'slim' && navbarPosition === 'combo') {
+          navbarDefault?.remove();
+          navbarTop?.remove();
+          topNavSlim?.remove();
+          navbarCombo?.remove();
+          navbarTopSlim?.remove();
+          dualNav?.remove();
+          navbarComboSlim.removeAttribute('style');
+          navbarVertical.removeAttribute('style');
+          document.documentElement.setAttribute('data-navbar-horizontal-shape', 'slim');
+        } else if (navbarTopShape === 'default' && navbarPosition === 'horizontal') {
+          navbarDefault?.remove();
+          topNavSlim?.remove();
+          navbarVertical?.remove();
+          navbarTopSlim?.remove();
+          navbarCombo?.remove();
+          navbarComboSlim?.remove();
+          dualNav?.remove();
+          navbarTop.removeAttribute('style');
+          document.documentElement.setAttribute('data-navigation-type', 'horizontal');
+        } else if (navbarTopShape === 'default' && navbarPosition === 'combo') {
+          topNavSlim?.remove();
+          navbarTop?.remove();
+          navbarTopSlim?.remove();
+          navbarDefault?.remove();
+          navbarComboSlim?.remove();
+          dualNav?.remove();
+          navbarCombo.removeAttribute('style');
+          navbarVertical.removeAttribute('style');
+          document.documentElement.setAttribute('data-navigation-type', 'combo');
+        } else {
+          topNavSlim?.remove();
+          navbarTop?.remove();
+          navbarTopSlim?.remove();
+          navbarCombo?.remove();
+          navbarComboSlim?.remove();
+          dualNav?.remove();
+          navbarDefault.removeAttribute('style');
+          navbarVertical.removeAttribute('style');
+        }
+
+        var navbarTopStyle = window.config.config.phoenixNavbarTopStyle;
+        var navbarTop = document.querySelector('.navbar-top');
+        if (navbarTopStyle === 'darker') {
+          navbarTop.setAttribute('data-navbar-appearance', 'darker');
+        }
+
+        var navbarVerticalStyle = window.config.config.phoenixNavbarVerticalStyle;
+        var navbarVertical = document.querySelector('.navbar-vertical');
+        if (navbarVerticalStyle === 'darker') {
+          navbarVertical.setAttribute('data-navbar-appearance', 'darker');
+        }
+      </script>
+
+      <div class="content">
+        <div class="">
+          <div class="row gy-3 gx-5 gx-xxl-6">
+
+            <div class="col-12 col-xl-4">
+              <div class="card mb-5">
+                <div class="card-header hover-actions-trigger position-relative mb-6" style="min-height: 130px; ">
+                  <div class="bg-holder rounded-top" style="background-image: linear-gradient(0deg, #000000 -3%, rgba(0, 0, 0, 0) 83%), url(../assets/img/bg/59.png)"></div>
+                  <label class="avatar avatar-4xl feed-avatar-profile"><img class="rounded-circle img-thumbnail shadow-sm border-0" src="../assets/img/users/sales.png" width="200" alt="" /></label>
+                </div>
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-12">
+                      <div class="mb-2 align-items-center">
+                        <h3 class="me-2">Nurwahyudi</h3>
+                        <span>12210322</span>
+                      </div>
+                      <hr>
+                      <div class="row">
+                        <div class="col-5 mb-1">
+                          <span class="fw-semibold text-body">Jenis Kelamin</span>
+                        </div>
+                        <div class="col-7">
+                          <span class="fs-8">Laki-laki</span>
+                        </div>
+                      </div>
+                      <div class="row mb-3">
+                        <div class="col-5 mb-1">
+                          <span class="fw-semibold text-body">Tanggal Lahir</span>
+                        </div>
+                        <div class="col-7">
+                          <span class="fs-8">19 Agustus 1998</span>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <label class="col-4 col-form-label fw-semibold text-body">No. HP</label>
+                        <div class="col-8">
+                          <div class="input-group"><input class="form-control" type="text" value="085877716046" />
+                            <button class="btn btn-phoenix-warning px-3"><span class="fas fa-edit"></span></button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <label class="col-4 col-form-label fw-semibold text-body">Email</label>
+                        <div class="col-8">
+                          <div class="input-group"><input class="form-control" type="text" value="wahyudi@gmail.com" />
+                            <button class="btn btn-phoenix-warning px-3"><span class="fas fa-edit"></span></button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row mt-3">
+                        <div class="col-12">
+                          <a href="ubah_password.html" class="btn btn-phoenix-warning w-100">Ubah Password</a>
+                        </div>
+                      </div>
+                      <div class="row mt-2">
+                        <div class="col-12">
+                          <a href="../index.html" class="btn btn-phoenix-secondary w-100" type="button"><span class="me-2" data-feather="log-out"> </span>Sign out</a></button>
+                          <div class="mt-2 text-center fw-bold fs-10 text-body-quaternary"><a class="text-body-quaternary me-1" href="#!">Privacy policy</a>&bull;<a class="text-body-quaternary mx-1" href="#!">Terms</a>&bull;<a class="text-body-quaternary ms-1" href="#!">Cookies</a></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- ===============================================-->
+    <!--    End of Main Content-->
+    <!-- ===============================================-->
+
+
+    <!-- ===============================================-->
+    <!--    JavaScripts-->
+    <!-- ===============================================-->
+    <script src="../vendors/popper/popper.min.js"></script>
+    <script src="../vendors/bootstrap/bootstrap.min.js"></script>
+    <script src="../vendors/anchorjs/anchor.min.js"></script>
+    <script src="../vendors/is/is.min.js"></script>
+    <script src="../vendors/fontawesome/all.min.js"></script>
+    <script src="../vendors/lodash/lodash.min.js"></script>
+    <script src="../vendors/list.js/list.min.js"></script>
+    <script src="../vendors/feather-icons/feather.min.js"></script>
+    <script src="../vendors/dayjs/dayjs.min.js"></script>
+    <script src="../assets/js/phoenix.js"></script>
+  </body>
+
+</html>

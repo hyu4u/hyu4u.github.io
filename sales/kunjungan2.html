@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr" data-navigation-type="default" data-navbar-horizontal-shape="default">
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Stock Check - WINGS Sales</title>
+
+    <!-- ===============================================-->
+    <!--    Favicons-->
+    <!-- ===============================================-->
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/img/logo/wings_icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/logo/wings_icon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/img/logo/wings_icon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/img/logo/wings_icon.png">
+    <link rel="manifest" href="../assets/manifest.json">
+    <meta name="msapplication-TileImage" content="../assets/img/logo/wings_icon.png">
+    <meta name="theme-color" content="#ffffff">
+    <script src="../vendors/simplebar/simplebar.min.js"></script>
+    <script src="../assets/js/config.js"></script>
+
+    <!-- ===============================================-->
+    <!--    Stylesheets-->
+    <!-- ===============================================-->
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800;900&amp;display=swap" rel="stylesheet">
+    <link href="../vendors/simplebar/simplebar.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link href="../assets/css/theme-rtl.min.css" type="text/css" rel="stylesheet" id="style-rtl">
+    <link href="../assets/css/theme.min.css" type="text/css" rel="stylesheet" id="style-default">
+    <link href="../assets/css/user-rtl.min.css" type="text/css" rel="stylesheet" id="user-style-rtl">
+    <link href="../assets/css/user.min.css" type="text/css" rel="stylesheet" id="user-style-default">
+    <script>
+      var phoenixIsRTL = window.config.config.phoenixIsRTL;
+      if (phoenixIsRTL) {
+        var linkDefault = document.getElementById('style-default');
+        var userLinkDefault = document.getElementById('user-style-default');
+        linkDefault.setAttribute('disabled', true);
+        userLinkDefault.setAttribute('disabled', true);
+        document.querySelector('html').setAttribute('dir', 'rtl');
+      } else {
+        var linkRTL = document.getElementById('style-rtl');
+        var userLinkRTL = document.getElementById('user-style-rtl');
+        linkRTL.setAttribute('disabled', true);
+        userLinkRTL.setAttribute('disabled', true);
+      }
+    </script>
+  </head>
+
+  <body>
+    <!-- ===============================================-->
+    <!--    Main Content-->
+    <!-- ===============================================-->
+    <main class="main" id="top">
+      <nav class="navbar navbar-vertical navbar-expand-lg" style="display:none;">
+        <div class="collapse navbar-collapse" id="navbarVerticalCollapse">
+          <!-- scrollbar removed-->
+          <div class="navbar-vertical-content">
+            <ul class="navbar-nav flex-column" id="navbarVerticalNav">
+              <li class="nav-item">
+                <div class="nav-item-wrapper"><a class="nav-link label-1" href="profil.html" role="button" data-bs-toggle="" aria-expanded="false">
+                  <div class="d-flex align-items-center"><span class="nav-link-icon"><span data-feather="user"></span></span><span class="nav-link-text-wrapper"><span class="nav-link-text">Profile</span></span></div>
+                </a></div><!-- parent pages-->
+                
+                <div class="nav-item-wrapper"><a class="nav-link label-1" href="ubah_password.html" role="button" data-bs-toggle="" aria-expanded="false">
+                  <div class="d-flex align-items-center"><span class="nav-link-icon"><span data-feather="key"></span></span><span class="nav-link-text-wrapper"><span class="nav-link-text">Ubah Password</span></span></div>
+                </a></div><!-- parent pages-->
+                
+                <div class="nav-item-wrapper"><a class="nav-link label-1" href="#download_log" role="button" data-bs-toggle="" aria-expanded="false">
+                  <div class="d-flex align-items-center"><span class="nav-link-icon"><span data-feather="book"></span></span><span class="nav-link-text-wrapper"><span class="nav-link-text">Download Log</span></span></div>
+                </a></div><!-- parent pages-->
+                
+                <div class="nav-item-wrapper"><a class="nav-link label-1" href="../index.html" role="button" data-bs-toggle="" aria-expanded="false">
+                  <div class="d-flex align-items-center"><span class="nav-link-icon"><span data-feather="log-out"></span></span><span class="nav-link-text-wrapper"><span class="nav-link-text">Logout</span></span></div>
+                </a></div><!-- parent pages-->
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="navbar-vertical-footer">
+          <button class="btn navbar-vertical-toggle border-0 fw-semibold w-100 white-space-nowrap d-flex align-items-center"><span class="uil uil-left-arrow-to-left fs-8"></span><span class="uil uil-arrow-from-right fs-8"></span><span class="navbar-vertical-footer-text ms-2">Collapsed View</span></button>
+        </div>
+      </nav>
+      <nav class="navbar navbar-top fixed-top navbar-expand" id="navbarDefault" style="display:none;">
+        <div class="collapse navbar-collapse justify-content-between">
+          <div class="navbar-logo">
+            <!-- <a href="jadwal_kunjung.html" class="btn navbar-toggler navbar-toggler-humburger-icon hover-bg-transparent" ><span class="fas fa-arrow-left"></span></a> -->
+            <a class="navbar-brand" href="#home.html">
+              <div class="d-flex align-items-center">
+                <span class="fw-semibold fs-8">SAT SENEN RAYA</span>
+              </div>
+            </a>
+          </div>
+          <ul class="navbar-nav navbar-nav-icons flex-row">
+            <li class="nav-item">
+              <a href="../index.html" class="btn navbar-toggler navbar-toggler-humburger-icon hover-bg-transparent" ><span data-feather="log-out">    </span></a>
+            </li>
+            <li class="nav-item">
+              <button class="btn navbar-toggler navbar-toggler-humburger-icon hover-bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#navbarVerticalCollapse" aria-controls="navbarTopCollapse" aria-expanded="false" aria-label="Toggle Navigation"><span class="navbar-toggle-icon"><span class="toggle-line"></span></span></button>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <script>
+        var navbarTopShape = window.config.config.phoenixNavbarTopShape;
+        var navbarPosition = window.config.config.phoenixNavbarPosition;
+        var body = document.querySelector('body');
+        var navbarDefault = document.querySelector('#navbarDefault');
+        var navbarTop = document.querySelector('#navbarTop');
+        var topNavSlim = document.querySelector('#topNavSlim');
+        var navbarTopSlim = document.querySelector('#navbarTopSlim');
+        var navbarCombo = document.querySelector('#navbarCombo');
+        var navbarComboSlim = document.querySelector('#navbarComboSlim');
+        var dualNav = document.querySelector('#dualNav');
+
+        var documentElement = document.documentElement;
+        var navbarVertical = document.querySelector('.navbar-vertical');
+
+        if (navbarPosition === 'dual-nav') {
+          topNavSlim?.remove();
+          navbarTop?.remove();
+          navbarTopSlim?.remove();
+          navbarCombo?.remove();
+          navbarComboSlim?.remove();
+          navbarDefault?.remove();
+          navbarVertical?.remove();
+          dualNav.removeAttribute('style');
+          document.documentElement.setAttribute('data-navigation-type', 'dual');
+
+        } else if (navbarTopShape === 'slim' && navbarPosition === 'vertical') {
+          navbarDefault?.remove();
+          navbarTop?.remove();
+          navbarTopSlim?.remove();
+          navbarCombo?.remove();
+          navbarComboSlim?.remove();
+          topNavSlim.style.display = 'block';
+          navbarVertical.style.display = 'inline-block';
+          document.documentElement.setAttribute('data-navbar-horizontal-shape', 'slim');
+
+        } else if (navbarTopShape === 'slim' && navbarPosition === 'horizontal') {
+          navbarDefault?.remove();
+          navbarVertical?.remove();
+          navbarTop?.remove();
+          topNavSlim?.remove();
+          navbarCombo?.remove();
+          navbarComboSlim?.remove();
+          dualNav?.remove();
+          navbarTopSlim.removeAttribute('style');
+          document.documentElement.setAttribute('data-navbar-horizontal-shape', 'slim');
+        } else if (navbarTopShape === 'slim' && navbarPosition === 'combo') {
+          navbarDefault?.remove();
+          navbarTop?.remove();
+          topNavSlim?.remove();
+          navbarCombo?.remove();
+          navbarTopSlim?.remove();
+          dualNav?.remove();
+          navbarComboSlim.removeAttribute('style');
+          navbarVertical.removeAttribute('style');
+          document.documentElement.setAttribute('data-navbar-horizontal-shape', 'slim');
+        } else if (navbarTopShape === 'default' && navbarPosition === 'horizontal') {
+          navbarDefault?.remove();
+          topNavSlim?.remove();
+          navbarVertical?.remove();
+          navbarTopSlim?.remove();
+          navbarCombo?.remove();
+          navbarComboSlim?.remove();
+          dualNav?.remove();
+          navbarTop.removeAttribute('style');
+          document.documentElement.setAttribute('data-navigation-type', 'horizontal');
+        } else if (navbarTopShape === 'default' && navbarPosition === 'combo') {
+          topNavSlim?.remove();
+          navbarTop?.remove();
+          navbarTopSlim?.remove();
+          navbarDefault?.remove();
+          navbarComboSlim?.remove();
+          dualNav?.remove();
+          navbarCombo.removeAttribute('style');
+          navbarVertical.removeAttribute('style');
+          document.documentElement.setAttribute('data-navigation-type', 'combo');
+        } else {
+          topNavSlim?.remove();
+          navbarTop?.remove();
+          navbarTopSlim?.remove();
+          navbarCombo?.remove();
+          navbarComboSlim?.remove();
+          dualNav?.remove();
+          navbarDefault.removeAttribute('style');
+          navbarVertical.removeAttribute('style');
+        }
+
+        var navbarTopStyle = window.config.config.phoenixNavbarTopStyle;
+        var navbarTop = document.querySelector('.navbar-top');
+        if (navbarTopStyle === 'darker') {
+          navbarTop.setAttribute('data-navbar-appearance', 'darker');
+        }
+
+        var navbarVerticalStyle = window.config.config.phoenixNavbarVerticalStyle;
+        var navbarVertical = document.querySelector('.navbar-vertical');
+        if (navbarVerticalStyle === 'darker') {
+          navbarVertical.setAttribute('data-navbar-appearance', 'darker');
+        }
+      </script>
+
+      <div class="content" id="tableExample3" data-list="{&quot;valueNames&quot;:[&quot;name&quot;],&quot;page&quot;:5,&quot;pagination&quot;:true}">
+        <div class="">
+          <div class="search-box mb-3 mx-auto">
+            <form class="position-relative"><input class="form-control search-input search form-control-sm" type="search" placeholder="Search" aria-label="Search">
+              <svg class="svg-inline--fa fa-magnifying-glass search-box-icon" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="magnifying-glass" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"></path></svg><!-- <span class="fas fa-search search-box-icon"></span> Font Awesome fontawesome.com -->
+            </form>
+          </div>
+        </div>
+        
+        <div class="d-grid gap-2 mx-n4 bg-body-emphasis py-1 px-3 border-y">
+          <div class="table-responsive">
+            <table class="table table-sm fs-9 m-0">
+              <thead>
+                <tr>
+                  <td class="text-end fs-10" colspan="3">Last Update : 17 Apr 2025</td>
+                </tr>
+              </thead>
+              <tbody class="list">
+                <tr>
+                  <td class="fs-9 align-middle">
+                    <div class="form-check mb-0 fs-8"><input class="form-check-input" type="checkbox" data-bulk-select-row='{"product":"Fitbit Sense Advanced Smartwatch with Tools for Heart Health, Stress Management & Skin Temperature Trends, Carbon/Graphite, One Size (S & L Bands...","productImage":"/products/1.png","price":"$39","category":"Plants","tags":["Health","Exercise","Discipline","Lifestyle","Fitness"],"star":false,"vendor":"Blue Olive Plant sellers. Inc","publishedOn":"Nov 12, 10:45 PM"}' /></div>
+                  </td>
+                  <td class="align-middle name">
+                    <span class="fw-bold">1210702</span>
+                     - KOPI TOP CAPPUCCINO PACK 12X10X31GR
+                  </td>
+                  <td class="align-middle">
+                    <div class="d-flex">
+                      <a href="#edit" class="btn btn-sm text-primary text-opacity-85 text-body-tertiary-hover me-2" data-bs-toggle="modal" data-bs-target="#produk"><span class="fas fa-file-signature fs-7"></span></a>
+                      <a href="#info" class="btn btn-sm text-info text-opacity-85 text-body-tertiary-hover me-2" data-bs-toggle="modal" data-bs-target="#info"><span class="fas fa-info-circle fs-7"></span></a>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="fs-9 align-middle">
+                    <div class="form-check mb-0 fs-8"><input class="form-check-input" type="checkbox" data-bulk-select-row='{"product":"Fitbit Sense Advanced Smartwatch with Tools for Heart Health, Stress Management & Skin Temperature Trends, Carbon/Graphite, One Size (S & L Bands...","productImage":"/products/1.png","price":"$39","category":"Plants","tags":["Health","Exercise","Discipline","Lifestyle","Fitness"],"star":false,"vendor":"Blue Olive Plant sellers. Inc","publishedOn":"Nov 12, 10:45 PM"}' /></div>
+                  </td>
+                  <td class="align-middle name">
+                    <span class="fw-bold">4144022</span>
+                     - KOPI TOP AVOCADO COFFEE 20G PACK 12X10X20GR
+                  </td>
+                  <td class="align-middle">
+                    <div class="d-flex">
+                      <a href="#edit" class="btn btn-sm text-primary text-opacity-85 text-body-tertiary-hover me-2" data-bs-toggle="modal" data-bs-target="#produk"><span class="fas fa-file-signature fs-7"></span></a>
+                      <a href="#info" class="btn btn-sm text-info text-opacity-85 text-body-tertiary-hover me-2" data-bs-toggle="modal" data-bs-target="#info"><span class="fas fa-info-circle fs-7"></span></a>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="fs-9 align-middle">
+                    <div class="form-check mb-0 fs-8"><input class="form-check-input" type="checkbox" data-bulk-select-row='{"product":"Fitbit Sense Advanced Smartwatch with Tools for Heart Health, Stress Management & Skin Temperature Trends, Carbon/Graphite, One Size (S & L Bands...","productImage":"/products/1.png","price":"$39","category":"Plants","tags":["Health","Exercise","Discipline","Lifestyle","Fitness"],"star":false,"vendor":"Blue Olive Plant sellers. Inc","publishedOn":"Nov 12, 10:45 PM"}' /></div>
+                  </td>
+                  <td class="align-middle name">
+                    <span class="fw-bold">1234567</span>
+                     - KOPI TOP CAPPUCCINO PACK 12X10X31GR
+                  </td>
+                  <td class="align-middle">
+                    <div class="d-flex">
+                      <a href="#edit" class="btn btn-sm text-primary text-opacity-85 text-body-tertiary-hover me-2" data-bs-toggle="modal" data-bs-target="#produk"><span class="fas fa-file-signature fs-7"></span></a>
+                      <a href="#info" class="btn btn-sm text-info text-opacity-85 text-body-tertiary-hover me-2" data-bs-toggle="modal" data-bs-target="#info"><span class="fas fa-info-circle fs-7"></span></a>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="fs-9 align-middle">
+                    <div class="form-check mb-0 fs-8"><input class="form-check-input" type="checkbox" data-bulk-select-row='{"product":"Fitbit Sense Advanced Smartwatch with Tools for Heart Health, Stress Management & Skin Temperature Trends, Carbon/Graphite, One Size (S & L Bands...","productImage":"/products/1.png","price":"$39","category":"Plants","tags":["Health","Exercise","Discipline","Lifestyle","Fitness"],"star":false,"vendor":"Blue Olive Plant sellers. Inc","publishedOn":"Nov 12, 10:45 PM"}' /></div>
+                  </td>
+                  <td class="align-middle name">
+                    <span class="fw-bold">7654321</span>
+                    - KOPI TOP AVOCADO COFFEE 20G PACK 12X10X20GR
+                  </td>
+                  <td class="align-middle">
+                    <div class="d-flex">
+                      <a href="#edit" class="btn btn-sm text-primary text-opacity-85 text-body-tertiary-hover me-2" data-bs-toggle="modal" data-bs-target="#produk"><span class="fas fa-file-signature fs-7"></span></a>
+                      <a href="#info" class="btn btn-sm text-info text-opacity-85 text-body-tertiary-hover me-2" data-bs-toggle="modal" data-bs-target="#info"><span class="fas fa-info-circle fs-7"></span></a>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="fs-9 align-middle">
+                    <div class="form-check mb-0 fs-8"><input class="form-check-input" type="checkbox" data-bulk-select-row='{"product":"Fitbit Sense Advanced Smartwatch with Tools for Heart Health, Stress Management & Skin Temperature Trends, Carbon/Graphite, One Size (S & L Bands...","productImage":"/products/1.png","price":"$39","category":"Plants","tags":["Health","Exercise","Discipline","Lifestyle","Fitness"],"star":false,"vendor":"Blue Olive Plant sellers. Inc","publishedOn":"Nov 12, 10:45 PM"}' /></div>
+                  </td>
+                  <td class="align-middle name">
+                    <span class="fw-bold">1122334</span>
+                     - KOPI TOP CAPPUCCINO PACK 12X10X31GR
+                  </td>
+                  <td class="align-middle">
+                    <div class="d-flex">
+                      <a href="#edit" class="btn btn-sm text-primary text-opacity-85 text-body-tertiary-hover me-2" data-bs-toggle="modal" data-bs-target="#produk"><span class="fas fa-file-signature fs-7"></span></a>
+                      <a href="#info" class="btn btn-sm text-info text-opacity-85 text-body-tertiary-hover me-2" data-bs-toggle="modal" data-bs-target="#info"><span class="fas fa-info-circle fs-7"></span></a>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="fs-9 align-middle">
+                    <div class="form-check mb-0 fs-8"><input class="form-check-input" type="checkbox" data-bulk-select-row='{"product":"Fitbit Sense Advanced Smartwatch with Tools for Heart Health, Stress Management & Skin Temperature Trends, Carbon/Graphite, One Size (S & L Bands...","productImage":"/products/1.png","price":"$39","category":"Plants","tags":["Health","Exercise","Discipline","Lifestyle","Fitness"],"star":false,"vendor":"Blue Olive Plant sellers. Inc","publishedOn":"Nov 12, 10:45 PM"}' /></div>
+                  </td>
+                  <td class="align-middle name">
+                    <span class="fw-bold">1210702</span>
+                     - KOPI TOP CAPPUCCINO PACK 12X10X31GR
+                  </td>
+                  <td class="align-middle">
+                    <div class="d-flex">
+                      <a href="#edit" class="btn btn-sm text-primary text-opacity-85 text-body-tertiary-hover me-2" data-bs-toggle="modal" data-bs-target="#produk"><span class="fas fa-file-signature fs-7"></span></a>
+                      <a href="#info" class="btn btn-sm text-info text-opacity-85 text-body-tertiary-hover me-2" data-bs-toggle="modal" data-bs-target="#info"><span class="fas fa-info-circle fs-7"></span></a>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="fs-9 align-middle">
+                    <div class="form-check mb-0 fs-8"><input class="form-check-input" type="checkbox" data-bulk-select-row='{"product":"Fitbit Sense Advanced Smartwatch with Tools for Heart Health, Stress Management & Skin Temperature Trends, Carbon/Graphite, One Size (S & L Bands...","productImage":"/products/1.png","price":"$39","category":"Plants","tags":["Health","Exercise","Discipline","Lifestyle","Fitness"],"star":false,"vendor":"Blue Olive Plant sellers. Inc","publishedOn":"Nov 12, 10:45 PM"}' /></div>
+                  </td>
+                  <td class="align-middle name">
+                    <span class="fw-bold">1210702</span>
+                     - KOPI TOP CAPPUCCINO PACK 12X10X31GR
+                  </td>
+                  <td class="align-middle">
+                    <div class="d-flex">
+                      <a href="#edit" class="btn btn-sm text-primary text-opacity-85 text-body-tertiary-hover me-2" data-bs-toggle="modal" data-bs-target="#produk"><span class="fas fa-file-signature fs-7"></span></a>
+                      <a href="#info" class="btn btn-sm text-info text-opacity-85 text-body-tertiary-hover me-2" data-bs-toggle="modal" data-bs-target="#info"><span class="fas fa-info-circle fs-7"></span></a>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="fs-9 align-middle">
+                    <div class="form-check mb-0 fs-8"><input class="form-check-input" type="checkbox" data-bulk-select-row='{"product":"Fitbit Sense Advanced Smartwatch with Tools for Heart Health, Stress Management & Skin Temperature Trends, Carbon/Graphite, One Size (S & L Bands...","productImage":"/products/1.png","price":"$39","category":"Plants","tags":["Health","Exercise","Discipline","Lifestyle","Fitness"],"star":false,"vendor":"Blue Olive Plant sellers. Inc","publishedOn":"Nov 12, 10:45 PM"}' /></div>
+                  </td>
+                  <td class="align-middle name">
+                    <span class="fw-bold">1210702</span>
+                     - KOPI TOP CAPPUCCINO PACK 12X10X31GR
+                  </td>
+                  <td class="align-middle">
+                    <div class="d-flex">
+                      <a href="#edit" class="btn btn-sm text-primary text-opacity-85 text-body-tertiary-hover me-2" data-bs-toggle="modal" data-bs-target="#produk"><span class="fas fa-file-signature fs-7"></span></a>
+                      <a href="#info" class="btn btn-sm text-info text-opacity-85 text-body-tertiary-hover me-2" data-bs-toggle="modal" data-bs-target="#info"><span class="fas fa-info-circle fs-7"></span></a>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="fs-9 align-middle">
+                    <div class="form-check mb-0 fs-8"><input class="form-check-input" type="checkbox" data-bulk-select-row='{"product":"Fitbit Sense Advanced Smartwatch with Tools for Heart Health, Stress Management & Skin Temperature Trends, Carbon/Graphite, One Size (S & L Bands...","productImage":"/products/1.png","price":"$39","category":"Plants","tags":["Health","Exercise","Discipline","Lifestyle","Fitness"],"star":false,"vendor":"Blue Olive Plant sellers. Inc","publishedOn":"Nov 12, 10:45 PM"}' /></div>
+                  </td>
+                  <td class="align-middle name">
+                    <span class="fw-bold">1210702</span>
+                     - KOPI TOP CAPPUCCINO PACK 12X10X31GR
+                  </td>
+                  <td class="align-middle">
+                    <div class="d-flex">
+                      <a href="#edit" class="btn btn-sm text-primary text-opacity-85 text-body-tertiary-hover me-2" data-bs-toggle="modal" data-bs-target="#produk"><span class="fas fa-file-signature fs-7"></span></a>
+                      <a href="#info" class="btn btn-sm text-info text-opacity-85 text-body-tertiary-hover me-2" data-bs-toggle="modal" data-bs-target="#info"><span class="fas fa-info-circle fs-7"></span></a>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="fs-9 align-middle">
+                    <div class="form-check mb-0 fs-8"><input class="form-check-input" type="checkbox" data-bulk-select-row='{"product":"Fitbit Sense Advanced Smartwatch with Tools for Heart Health, Stress Management & Skin Temperature Trends, Carbon/Graphite, One Size (S & L Bands...","productImage":"/products/1.png","price":"$39","category":"Plants","tags":["Health","Exercise","Discipline","Lifestyle","Fitness"],"star":false,"vendor":"Blue Olive Plant sellers. Inc","publishedOn":"Nov 12, 10:45 PM"}' /></div>
+                  </td>
+                  <td class="align-middle name">
+                    <span class="fw-bold">1210702</span>
+                     - KOPI TOP CAPPUCCINO PACK 12X10X31GR
+                  </td>
+                  <td class="align-middle">
+                    <div class="d-flex">
+                      <a href="#edit" class="btn btn-sm text-primary text-opacity-85 text-body-tertiary-hover me-2" data-bs-toggle="modal" data-bs-target="#produk"><span class="fas fa-file-signature fs-7"></span></a>
+                      <a href="#info" class="btn btn-sm text-info text-opacity-85 text-body-tertiary-hover me-2" data-bs-toggle="modal" data-bs-target="#info"><span class="fas fa-info-circle fs-7"></span></a>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="fs-9 align-middle">
+                    <div class="form-check mb-0 fs-8"><input class="form-check-input" type="checkbox" data-bulk-select-row='{"product":"Fitbit Sense Advanced Smartwatch with Tools for Heart Health, Stress Management & Skin Temperature Trends, Carbon/Graphite, One Size (S & L Bands...","productImage":"/products/1.png","price":"$39","category":"Plants","tags":["Health","Exercise","Discipline","Lifestyle","Fitness"],"star":false,"vendor":"Blue Olive Plant sellers. Inc","publishedOn":"Nov 12, 10:45 PM"}' /></div>
+                  </td>
+                  <td class="align-middle name">
+                    <span class="fw-bold">1210702</span>
+                     - KOPI TOP CAPPUCCINO PACK 12X10X31GR
+                  </td>
+                  <td class="align-middle">
+                    <div class="d-flex">
+                      <a href="#edit" class="btn btn-sm text-primary text-opacity-85 text-body-tertiary-hover me-2" data-bs-toggle="modal" data-bs-target="#produk"><span class="fas fa-file-signature fs-7"></span></a>
+                      <a href="#info" class="btn btn-sm text-info text-opacity-85 text-body-tertiary-hover me-2" data-bs-toggle="modal" data-bs-target="#info"><span class="fas fa-info-circle fs-7"></span></a>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="fs-9 align-middle">
+                    <div class="form-check mb-0 fs-8"><input class="form-check-input" type="checkbox" data-bulk-select-row='{"product":"Fitbit Sense Advanced Smartwatch with Tools for Heart Health, Stress Management & Skin Temperature Trends, Carbon/Graphite, One Size (S & L Bands...","productImage":"/products/1.png","price":"$39","category":"Plants","tags":["Health","Exercise","Discipline","Lifestyle","Fitness"],"star":false,"vendor":"Blue Olive Plant sellers. Inc","publishedOn":"Nov 12, 10:45 PM"}' /></div>
+                  </td>
+                  <td class="align-middle name">
+                    <span class="fw-bold">1210702</span>
+                     - KOPI TOP CAPPUCCINO PACK 12X10X31GR
+                  </td>
+                  <td class="align-middle">
+                    <div class="d-flex">
+                      <a href="#edit" class="btn btn-sm text-primary text-opacity-85 text-body-tertiary-hover me-2" data-bs-toggle="modal" data-bs-target="#produk"><span class="fas fa-file-signature fs-7"></span></a>
+                      <a href="#info" class="btn btn-sm text-info text-opacity-85 text-body-tertiary-hover me-2" data-bs-toggle="modal" data-bs-target="#info"><span class="fas fa-info-circle fs-7"></span></a>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <td class="text-end fs-10" colspan="3">Checked SKU : <span class="text-warning-darker">0 / 24</span></td>
+                </tr>
+              </tfoot>
+            </table>
+          </div>
+          <div class="d-flex justify-content-between mt-3"><span class="d-none d-sm-inline-block" data-list-info="data-list-info">1 to 5 <span class="text-body-tertiary"> Items of </span>43</span>
+            <div class="d-flex"><button class="page-link disabled" data-list-pagination="prev" disabled=""><svg class="svg-inline--fa fa-chevron-left" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-left" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" data-fa-i2svg=""><path fill="currentColor" d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z"></path></svg><!-- <span class="fas fa-chevron-left"></span> Font Awesome fontawesome.com --></button>
+              <ul class="mb-0 pagination"><li class="active"><button class="page" type="button" data-i="1" data-page="5">1</button></li><li><button class="page" type="button" data-i="2" data-page="5">2</button></li><li><button class="page" type="button" data-i="3" data-page="5">3</button></li><li class="disabled"><button class="page" type="button">...</button></li></ul><button class="page-link pe-0" data-list-pagination="next"><svg class="svg-inline--fa fa-chevron-right" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" data-fa-i2svg=""><path fill="currentColor" d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"></path></svg><!-- <span class="fas fa-chevron-right"></span> Font Awesome fontawesome.com --></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="row gx-6 mt-10">
+          <a href="#" class="btn btn-subtle-secondary text-end">Berikutnya<span class="fas fa-chevron-circle-right ms-2" data-fa-transform="shrink-3"></span></a>
+        </div>
+      </div>
+    </main><!-- ===============================================-->
+    <!--    End of Main Content-->
+    <!-- ===============================================-->
+
+    <div class="modal fade" id="produk" tabindex="-1" aria-labelledby="verticallyCenteredModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="d-flex mt-1 mb-2">
+              <h6 class="d-inline-block fs-7 fw-bold">KOPI TOP CAPPUCCINO PACK
+                <br><span class="d-inline-block fs-9 fw-light">1210702 - 12X10X31GR</span>
+              </h6>
+            </div>
+            <div class="row">
+              <label class="col-2 col-form-label fs-9 fw-semibold text-body">Stok:</label>
+              <div class="col-4">
+                <input class="form-control" id="pack" type="text" placeholder="Pcs"/>
+              </div>
+              <div class="col-4">
+                <select class="form-select" aria-label="Default select example">
+                  <option selected="">Tag</option>
+                  <option value="F">F</option>
+                  <option value="M">M</option>
+                  <option value="B">B</option>
+                  <option value="L">L</option>
+                  <option value="O">O</option>
+                  <option value="T">T</option>
+                  <option value="D">D</option>
+                </select>
+              </div>
+            </div>
+            <div class="row">
+              <label class="col-3 col-form-label fs-9 fw-semibold text-body">min-Stok:</label>
+              <div class="col-3">
+                <input class="form-control-plaintext outline-none" id="min" type="text" value="20 pcs"/>
+              </div>
+              <div class="col-4 mt-2">
+                <div class="form-check">
+                  <input class="form-check-input" id="restock" type="checkbox" value="" />
+                  <label class="form-check-label" for="restock">Restock</label>
+                </div>
+              </div>
+            </div>
+            <hr class="mb-0">
+            <div class="row">
+              <div class="col-6">
+                <label class="form-label" for="normal">Harga Normal (Rp)</label>
+                <input class="form-control" id="normal" type="text" value="13200" />
+                <!-- <span class="fs-9 fw-semibold text-body">Harga normal
+                  <br>Rp</span>
+                <span class="fw-bold text-body">13.200</span> -->
+              </div>
+              <div class="col-6">
+                <label class="form-label" for="promo">Harga Promo (Rp)</label>
+                <input class="form-control" id="promo" type="text" value="11500" />
+                <!-- <span class="fs-9 fw-semibold text-body">Harga promo
+                  <br>Rp</span>
+                <span class="fw-bold text-body">11.500</span> -->
+              </div>
+            </div>
+            <div class="row mt-3">
+              <div class="col-3">
+                <div class="form-check">
+                  <input class="form-check-input" id="promo" type="checkbox" value="" />
+                  <label class="form-check-label" for="promo">Promo</label>
+                </div>
+              </div>
+              <div class="col-4">
+                <input class="form-control" id="harga" type="text" placeholder="Harga"/>
+              </div>
+              <div class="col-5">
+                <select class="form-select" aria-label="Default select example">
+                  <option selected="">Jenis Promo</option>
+                  <option value="1">Bulanan</option>
+                  <option value="2">JSM</option>
+                  <option value="3">Tebus Murah</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-outline-secondary" type="button" data-bs-dismiss="modal">Cancel</button>
+            <a href="kunjungan3.html" class="btn btn-secondary" type="button">Simpan</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="info" tabindex="-1" aria-labelledby="verticallyCenteredModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="d-flex mt-1 mb-2">
+              <h6 class="d-inline-block fs-7 fw-bold">KOPI TOP CAPPUCCINO PACK
+                <br><span class="d-inline-block fs-9 fw-light">1210702 - 12X10X31GR</span>
+              </h6>
+            </div>
+            <div class="row mb-2">
+              <div class="col-3">
+                Kategori
+              </div>
+              <div class="col-5">
+                Coffe
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-3">
+                Planogram
+              </div>
+              <div class="col-9">
+                <img class="border w-100" src="../assets/img/planogram/planogram.jpg" alt="Planogram" />
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-info" type="button" data-bs-dismiss="modal">OK</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===============================================-->
+    <!--    JavaScripts-->
+    <!-- ===============================================-->
+    <script src="../vendors/popper/popper.min.js"></script>
+    <script src="../vendors/bootstrap/bootstrap.min.js"></script>
+    <script src="../vendors/anchorjs/anchor.min.js"></script>
+    <script src="../vendors/is/is.min.js"></script>
+    <script src="../vendors/fontawesome/all.min.js"></script>
+    <script src="../vendors/lodash/lodash.min.js"></script>
+    <script src="../vendors/list.js/list.min.js"></script>
+    <script src="../vendors/feather-icons/feather.min.js"></script>
+    <script src="../vendors/dayjs/dayjs.min.js"></script>
+    <script src="../assets/js/phoenix.js"></script>
+  </body>
+
+</html>
