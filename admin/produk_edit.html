@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Toko - WINGS Sales</title>
+    <title>Edit Produk - WINGS Sales</title>
 
     <!-- ===============================================-->
     <!--    Favicons-->
@@ -95,11 +95,11 @@
 
               <li class="nav-item">
                 
-                <div class="nav-item-wrapper"><a class="nav-link label-1" href="produk.html" role="button" data-bs-toggle="" aria-expanded="false">
+                <div class="nav-item-wrapper"><a class="nav-link active label-1" href="produk.html" role="button" data-bs-toggle="" aria-expanded="false">
                   <div class="d-flex align-items-center"><span class="nav-link-icon"><span data-feather="package"></span></span><span class="nav-link-text-wrapper"><span class="nav-link-text">Produk</span></span></div>
                 </a></div><!-- parent pages-->
                 
-                <div class="nav-item-wrapper"><a class="nav-link active label-1" href="toko.html" role="button" data-bs-toggle="" aria-expanded="false">
+                <div class="nav-item-wrapper"><a class="nav-link label-1" href="toko.html" role="button" data-bs-toggle="" aria-expanded="false">
                   <div class="d-flex align-items-center"><span class="nav-link-icon"><span data-feather="archive"></span></span><span class="nav-link-text-wrapper"><span class="nav-link-text">Toko</span></span></div>
                 </a></div><!-- parent pages-->
 
@@ -391,110 +391,51 @@
           <nav class="mb-3" aria-label="breadcrumb">
             <ol class="breadcrumb mb-0">
               <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
-              <li class="breadcrumb-item active">Toko</li>
+              <li class="breadcrumb-item"><a href="produk.html">Produk</a></li>
+              <li class="breadcrumb-item active">Edit</li>
             </ol>
           </nav>
           <div class="d-flex align-items-center">
-            <span class="text-body-tertiary" data-feather="archive" style="height: 28px; width: 28px;"></span>
-            <span class="text-body-tertiary fs-5 fw-semibold ms-2 mt-1">Toko</span>
+            <span class="text-body-tertiary fs-5 fw-semibold">Edit Produk</span>
           </div>
         </div>
         
         <div class="mx-n4 px-4 mx-lg-n6 px-lg-6 bg-body-emphasis py-3 border-y">
-          <div id="tableExample3" data-list="{&quot;valueNames&quot;:[&quot;id&quot;,&quot;nama&quot;,&quot;kontak&quot;,&quot;no_hp&quot;,&quot;daerah&quot;,&quot;alamat&quot;],&quot;page&quot;:5,&quot;pagination&quot;:true}">
-            <div class="row g-2 gy-3 align-items-start">
-              <div class="col-auto">
-                <a href="toko_tambah.html" class="btn btn-sm btn-phoenix-primary bg-body-emphasis bg-body-hover me-2">Tambah Toko</a>
-              </div>
-              <div class="col-auto">
-                <div class="search-box mb-3 mx-auto">
-                  <form class="position-relative">
-                    <input class="form-control search-input search form-control-sm" type="search" placeholder="Search" aria-label="Search">
-                    <svg class="svg-inline--fa fa-magnifying-glass search-box-icon" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="magnifying-glass" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"></path></svg><!-- <span class="fas fa-search search-box-icon"></span> Font Awesome fontawesome.com -->
-                  </form>
+          <div class="row pt-2">
+            <div class="col-7">
+              <div class="row">
+                <label class="col-sm-2 col-form-label" for="barcode">Barcode</label>
+                <div class="col-sm-10">
+                  <input class="form-control" id="barcode" type="text" value="1234567"/>
+                </div>
+                <label class="col-sm-2 col-form-label" for="nama">Nama</label>
+                <div class="col-sm-10">
+                  <input class="form-control" id="nama" type="text" value="KOPI TOP AVOCADO COFFEE 20G PACK"/>
+                </div>
+                <label class="col-sm-2 col-form-label" for="pack">isi /pack</label>
+                <div class="col-sm-10">
+                  <input class="form-control" id="pack" type="text" value="12X10X20GR"/>
+                </div>
+                <label class="col-sm-2 col-form-label" for="harga">Harga</label>
+                <div class="col-sm-10">
+                  <div class="input-group">
+                    <span class="input-group-text" id="basic-addon1">Rp</span>
+                    <input class="form-control" id="harga" type="number" value="10000" aria-label="Username" aria-describedby="basic-addon1" />
+                  </div>
+                </div>
+                <label class="col-sm-2 col-form-label" for="deskripsi">Deskripsi</label>
+                <div class="col-sm-10">
+                  <textarea class="form-control" id="deskripsi" rows="3"> - </textarea>
+                </div>
+                <div class="d-flex mt-2">
+                  <div class="ms-auto">
+                    <a href="#" class="btn btn-sm btn-phoenix-warning me-2">Reset</a>
+                    <a href="produk.html" class="btn btn-sm btn-primary">Simpan</a>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="table-responsive">
-              <table class="table table-hover table-striped table-sm fs-9 mb-0">
-                <thead>
-                  <tr>
-                    <th class="sort border-top border-translucent ps-3" data-sort="id">ID</th>
-                    <th class="sort border-top" data-sort="nama">Nama</th>
-                    <th class="sort border-top" data-sort="kontak">Kontak Person</th>
-                    <th class="sort border-top" data-sort="no_hp">No HP</th>
-                    <th class="sort border-top" data-sort="daerah">Daerah</th>
-                    <th class="sort border-top" data-sort="alamat">Alamat</th>
-                    <th class="sort text-end align-middle pe-0 border-top" scope="col"></th>
-                  </tr>
-                </thead>
-                <tbody class="list"><tr>
-                    <td class="ps-3 id">MM00008401</td>
-                    <td class="nama">SAT SENEN RAYA</td>
-                    <td class="kontak">Dudu</td>
-                    <td class="no_hp">085877700011</td>
-                    <td class="daerah">SENEN</td>
-                    <td class="alamat">Jl. Senen Raya Kel No.48A 9, RT.9/RW.1, Senen, Kec. Senen, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10410</td>
-                    <td class="white-space-nowrap text-end pe-0 btn-reveal-trigger">
-                      <a href="https://maps.app.goo.gl/jVY12K5W5AhU1JTz9" target="_blank" class="btn btn-sm text-primary text-opacity-85 text-body-tertiary-hover me-2 fs-7"><span class="fas fa-location-arrow"></span></a>
-                      <a href="toko_edit.html" class="btn btn-sm text-warning text-opacity-85 text-body-tertiary-hover me-2"><span class="fas fa-edit fs-7"></span></a>
-                      <button class="btn btn-sm text-danger text-opacity-85 text-body-tertiary-hover me-2" data-bs-toggle="modal" data-bs-target="#hapus"><span class="fas fa-trash fs-7"></span></button>
-                    </td>
-                  </tr><tr>
-                    <td class="ps-3 id">MM00008402</td>
-                    <td class="nama">SAT BUNGUR BESAR</td>
-                    <td class="kontak">Putri</td>
-                    <td class="no_hp">085877700011</td>
-                    <td class="daerah">BUNGUR</td>
-                    <td class="alamat">Jl. Senen Raya Kel No.48A 9, RT.9/RW.1, Senen, Kec. Senen, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10410</td>
-                    <td class="white-space-nowrap text-end pe-0 btn-reveal-trigger">
-                      <a href="https://maps.app.goo.gl/jVY12K5W5AhU1JTz9" target="_blank" class="btn btn-sm text-primary text-opacity-85 text-body-tertiary-hover me-2 fs-7"><span class="fas fa-location-arrow"></span></a>
-                      <a href="toko_edit.html" class="btn btn-sm text-warning text-opacity-85 text-body-tertiary-hover me-2"><span class="fas fa-edit fs-7"></span></a>
-                      <button class="btn btn-sm text-danger text-opacity-85 text-body-tertiary-hover me-2" data-bs-toggle="modal" data-bs-target="#hapus"><span class="fas fa-trash fs-7"></span></button>
-                    </td>
-                  </tr><tr>
-                    <td class="ps-3 id">MM00008403</td>
-                    <td class="nama">SAT BUNGUR RAYA KEMAYORAN</td>
-                    <td class="kontak">Putra</td>
-                    <td class="no_hp">085877700011</td>
-                    <td class="daerah">KEMAYORAN</td>
-                    <td class="alamat">Jl. Senen Raya Kel No.48A 9, RT.9/RW.1, Senen, Kec. Senen, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10410</td>
-                    <td class="white-space-nowrap text-end pe-0 btn-reveal-trigger">
-                      <a href="https://maps.app.goo.gl/jVY12K5W5AhU1JTz9" target="_blank" class="btn btn-sm text-primary text-opacity-85 text-body-tertiary-hover me-2 fs-7"><span class="fas fa-location-arrow"></span></a>
-                      <a href="toko_edit.html" class="btn btn-sm text-warning text-opacity-85 text-body-tertiary-hover me-2"><span class="fas fa-edit fs-7"></span></a>
-                      <button class="btn btn-sm text-danger text-opacity-85 text-body-tertiary-hover me-2" data-bs-toggle="modal" data-bs-target="#hapus"><span class="fas fa-trash fs-7"></span></button>
-                    </td>
-                  </tr><tr>
-                    <td class="ps-3 id">MM00008404</td>
-                    <td class="nama">SAT KALI BARU TIMUR</td>
-                    <td class="kontak">Budi</td>
-                    <td class="no_hp">085877700011</td>
-                    <td class="daerah">KALI BARU</td>
-                    <td class="alamat">Jl. Senen Raya Kel No.48A 9, RT.9/RW.1, Senen, Kec. Senen, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10410</td>
-                    <td class="white-space-nowrap text-end pe-0 btn-reveal-trigger">
-                      <a href="https://maps.app.goo.gl/jVY12K5W5AhU1JTz9" target="_blank" class="btn btn-sm text-primary text-opacity-85 text-body-tertiary-hover me-2 fs-7"><span class="fas fa-location-arrow"></span></a>
-                      <a href="toko_edit.html" class="btn btn-sm text-warning text-opacity-85 text-body-tertiary-hover me-2"><span class="fas fa-edit fs-7"></span></a>
-                      <button class="btn btn-sm text-danger text-opacity-85 text-body-tertiary-hover me-2" data-bs-toggle="modal" data-bs-target="#hapus"><span class="fas fa-trash fs-7"></span></button>
-                    </td>
-                  </tr><tr>
-                    <td class="ps-3 id">MM00008405</td>
-                    <td class="nama">SAT KALI BARU 6</td>
-                    <td class="kontak">Joko</td>
-                    <td class="no_hp">085877700011</td>
-                    <td class="daerah">KALI BARU</td>
-                    <td class="alamat">Jl. Senen Raya Kel No.48A 9, RT.9/RW.1, Senen, Kec. Senen, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10410</td>
-                    <td class="white-space-nowrap text-end pe-0 btn-reveal-trigger">
-                      <a href="https://maps.app.goo.gl/jVY12K5W5AhU1JTz9" target="_blank" class="btn btn-sm text-primary text-opacity-85 text-body-tertiary-hover me-2 fs-7"><span class="fas fa-location-arrow"></span></a>
-                      <a href="toko_edit.html" class="btn btn-sm text-warning text-opacity-85 text-body-tertiary-hover me-2"><span class="fas fa-edit fs-7"></span></a>
-                      <button class="btn btn-sm text-danger text-opacity-85 text-body-tertiary-hover me-2" data-bs-toggle="modal" data-bs-target="#hapus"><span class="fas fa-trash fs-7"></span></button>
-                    </td>
-                  </tr></tbody>
-              </table>
-            </div>
-            <div class="d-flex justify-content-between mt-3"><span class="d-none d-sm-inline-block" data-list-info="data-list-info">1 to 5 <span class="text-body-tertiary"> Items of </span>43</span>
-              <div class="d-flex"><button class="page-link disabled" data-list-pagination="prev" disabled=""><svg class="svg-inline--fa fa-chevron-left" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-left" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" data-fa-i2svg=""><path fill="currentColor" d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z"></path></svg><!-- <span class="fas fa-chevron-left"></span> Font Awesome fontawesome.com --></button>
-                <ul class="mb-0 pagination"><li class="active"><button class="page" type="button" data-i="1" data-page="5">1</button></li><li><button class="page" type="button" data-i="2" data-page="5">2</button></li><li><button class="page" type="button" data-i="3" data-page="5">3</button></li><li class="disabled"><button class="page" type="button">...</button></li></ul><button class="page-link pe-0" data-list-pagination="next"><svg class="svg-inline--fa fa-chevron-right" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" data-fa-i2svg=""><path fill="currentColor" d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"></path></svg><!-- <span class="fas fa-chevron-right"></span> Font Awesome fontawesome.com --></button>
-              </div>
+            <div class="col-5">
             </div>
           </div>
         </div>
@@ -520,19 +461,6 @@
     <!--    End of Main Content-->
     <!-- ===============================================-->
 
-    <div class="modal fade" id="hapus" tabindex="-1" aria-labelledby="verticallyCenteredModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-body">
-            <p>Yakin menghapus <span class="fs-10">(MM00008401)</span> SAT SENEN RAYA ?</p>
-          </div>
-          <div class="modal-footer">
-            <button class="btn btn-outline-primary" type="button" data-bs-dismiss="modal">Batal</button>
-            <button class="btn btn-primary" type="button" data-bs-dismiss="modal">Hapus</button>
-          </div>
-        </div>
-      </div>
-    </div>
 
     <!-- ===============================================-->
     <!--    JavaScripts-->
